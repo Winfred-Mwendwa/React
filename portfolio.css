@@ -1,0 +1,161 @@
+/*css reset*/
+
+/* Box sizing rules */
+*,
+*::before, 
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+*{
+  margin: 0;
+  padding:0;
+  font:inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+html, body {
+    height:100%;
+}
+/* Set core body defaults */
+body {
+  
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture, svg {
+  max-width: 100%;
+  display: block;
+}
+
+
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/*end of css reset*/
+
+/*variables*/
+:root {
+  --color-neutral-100:#ffffff;
+  --color-neutral-200:#f0f0f0;
+  --color-neutral-300:#c4c4c4;
+  --color-neutral-400:#6CACE4;
+  --dark-color-400:#201F1F;
+
+  --gradient-500:#9845E8;
+  --gradient-600:#33D2FF;
+  --gradient-700:#DD5789;
+
+/*font sizes for mobile*/
+  --font-size-100: 0.875rem;/*14px*/
+  --font-size-200: 1rem; /*16px*/
+  --font-size-300: 1.125rem;/*18px*/
+  --font-size-400: 6rem;/*96px*/
+
+/*font-sizes for large sceens*/
+  @media (min-width:50em) {
+    :root {
+      --font-size-100:1.934296rem; /*30.94875*/
+      --font-size-200:2.210625rem; /*35.37px*/
+      --font-size-300:2.486875rem; /*39.79px*/
+      --font-size-400:13.26375rem; /*212.22px*/
+    }
+  }
+    
+/*font weights*/
+  --font-weight-100: 200;
+  --font-weight-200: 300;
+  --font0weight-300: 500;
+
+/*font families*/
+  --primary-ff: 'Inter', sans-serif;
+  --secondary-ff: 'Roboto', sans-serif;
+
+/*spacing between sections*/
+
+
+
+}
+
+/*utility classes*/
+.clr-neutral-100 {
+  color: var(--color-neutral-100);
+}
+.clr-neutral-200 {
+  color: var(--color-neutral-200);
+}
+.clr-neural-300 {
+  color: var(--color-neutral-300);
+}
+.clr-neural-400 {
+  color: var(--color-neutral-400);
+}
+.background-color {
+  color: var(--dark-color-400);
+}
+
+.fs-100 {
+  font-size: var(--font-size-100);
+}
+.fs-200 {
+  font-size: var(--font-size-200);
+}
+.fs-300 {
+  font-size: var(--font-size-300);
+}
+.fs-400 {
+  font-size: var(--font-size-400);
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+.fw-300 {
+  font-weight: 300;
+}
+.fw-500 {
+  font-weight: 500;
+}
+
+.ff-primary {
+  font-family: var(--primary-ff);
+}
+.ff-secondary {
+  font-family: var(--secondary-ff);
+}
+/*end of utility classes*/
+
+/*General styling*/
+
+
