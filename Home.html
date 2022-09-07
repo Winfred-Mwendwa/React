@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+	  <link rel="stylesheet" href="Surveyformstyles.css" />
+    </head>
+  <body>
+    
+    <h1 id="title">Winnie Codes Survey Form</h1>
+    <p id="description" class="thanks">Thank you for taking time to fill out this form</p>
+    <div>
+    <form id="survey-form">
+    <fieldset>
+      
+        <label id="name-label">User-name <input id="name" type="text" placeholder="Enter your name" required></label>
+        <label id="email-label">Email <input id="email" type="email" placeholder="Enter your email" required></label>
+        <label id="number-label">Age <input id="number" type="number" min="18" max="150" placeholder="Enter your Age"></label>
+    </fieldset>
+        <fieldset>
+                <p>What is your current role?(Select one that best describes it)</p>
+                <select id="dropdown">
+                    <option value=" ">Select one</option>
+                    <option value="1">Front-end developer</option>
+                    <option value="2">Back-end developer</option>
+                    <option value="3">Full-stack developer</option>
+                    <option value="4">Student</option>
+                    <option value="5">Upcoming developer</option>
+                </select>
+        </fieldset>
+        <fieldset>
+       <p>Do you prefer working alone or in groups?</p>
+       <label><input type="radio" name="working" value="1" class="inline">Alone</label>
+
+       <label><input type="radio" name="working" value="2" class="inline" >In groups</label>
+       <label><input type="radio" name="working" value="3" class="inline">Depends on the project</label>
+    </fieldset>
+    <fieldset>
+      <p>What do you enjoy most about your current role?(Check all that apply)</p>
+
+      <label><input type="checkbox" name="Enjoyment" value="1" class="inline">Challenging tasks</label>
+      <label><input type="checkbox"   name="Enjoyment" value="2" class="inline">Learning new things</label>
+      <label><input type="checkbox" name="Enjoyment" value="3" class="inline">Meeting new people</label>
+      <label><input type="checkbox" name="Enjoyment" value="4" class="inline">I get to travel alot</label>
+      <label><input type="checkbox" name="Enjoyment" value="5" class="inline">Not sure</label>
+        <label><input type="checkbox" name="Enjoyment" value="6" class="inline">I don't enjoy it, I want to change</label>
+       </fieldset>
+        <fieldset>
+         <p>Tell me an interesting coding project you have worked on recently</p>
+         <textarea placeholder="I have been working on an app that..."></textarea>
+        </fieldset>
+        <fieldset>
+            <p>Any comments or suggestions?</p>
+            <textarea placeholder="Your comment or suggestion..."></textarea>
+          </fieldset>
+        <input id="submit" type="submit">  
+      </form>
+   </div>
+    </body>
+  </html>

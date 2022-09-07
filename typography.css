@@ -1,0 +1,89 @@
+* {   /*universal selector*/
+    box-sizing:border-box; /*reset the box model by removing the default margin and padding property added by the browser*/
+  }
+  
+  html {
+    font-size: 16px;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif; /*user's browser will automatically download and try to load the open sans font family*/
+    /*sans-serif is the default browser font family and is useed as a fall back font in case the open sans fails to load*/
+  }
+  
+  .label {
+    border: 2px solid black; /*borders can be used to highlight text*/
+    width: 270px;
+    margin: 20px auto;
+    padding: 0 7px;
+  }
+  
+  header h1 {
+    text-align: center;
+    margin: -4px 0;
+    letter-spacing: 0.15px
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  .divider {
+    border-bottom: 1px solid #888989;
+    margin: 2px 0;
+    clear: right;
+  }
+  
+  .bold {
+    font-weight: 800;
+  }
+  
+  .right {
+    float: right;
+  }
+  
+  .lg {  /*larger divider*/
+    height: 10px;
+  }
+  
+  .lg, .md {  /*medium divider*/
+    background-color: black;
+    border: 0;
+  }
+  
+  .md {
+    height: 5px;
+  }
+  
+  .sm-text {
+    font-size: 0.85rem;
+  }
+  
+  .calories-info h1 {
+    margin: -5px -2px;
+    overflow: hidden;
+  }
+  /*span element is used to place an element on the left or right of its container, allowing other content (such as text) to wrap around it.*/
+  .calories-info span {
+    font-size: 1.2em;
+    margin-top: -7px;
+  }
+  
+  .indent {
+    margin-left: 1em;
+  }
+  
+  .dbl-indent {  /*double indent*/
+    margin-left: 2em;
+  }
+  
+  .daily-value p:not(.no-divider) { /*not pseudo selector excludes the specified class from the rule*/
+    border-bottom: 1px solid #888989;
+  }
+  
+  .note {
+    font-size: 0.6rem;
+    margin: 5px 0;
+    padding:0 8px;
+    text-indent:-8px;
+  }

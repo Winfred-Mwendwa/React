@@ -1,0 +1,45 @@
+* { 
+    box-sizing: border-box; /* *is a universal selector*/
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+    background: #EBE7E7;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 32px;
+    background: #E0DDDD;
+  }
+  
+  #gallery {
+    display: flex; /* set display to flex in order to use css flexbox model*/
+    flex-direction: row; /*specifies direction of flexible items on the page*/
+    flex-wrap: wrap; /*wrap overflowing items to next row/column*/
+    justify-content: center;
+    align-items: center;
+    padding: 0 4px;
+  }
+  
+  #gallery img {
+    width: 25%;
+    height: 300px;
+    object-fit: cover; /*aspect ratio of images is maintained using crop to fit*/
+    margin-top: 8px;
+    padding: 0 4px;
+    border-radius: 10px; /*round the edges*/
+  }
+  
+  @media (max-width: 800px) {
+    #gallery img {      /*media queries are an important aspect of responsive web design*/
+      width: 50%;/*they are used to apply a CSS rule only when certain conditions are met*/
+    }             /*here, for screens smaller than 800px, a width of 50% will be applied to the images*/
+  }
+  
+  @media (max-width:600px) {
+    #gallery img {      /*apply 100% for screens smaller than 600px*/
+      width: 100%;
+    }
+  }
