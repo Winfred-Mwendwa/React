@@ -17,3 +17,11 @@ The function call, ReactDOM.render(JSX, document.getElementById('root')) places 
 
 ~Any JSX element can be written with a self-closing tag (<div /> ;no content can be added to this div), and every element must be closed. 
 
+~One of two ways to create a React component is by using a JavaScript function. This creates a stateless component i.e. one which can receive data and render it but does not manage changes to the data. To create a component using a function, simply write a JS function that returns either JSX or null.
+Using the React component architecture, the UI of a page can be constructed from several isolated components, making the code base more maintainable.
+Function names must start with a capital letter in React.
+
+~The other way to define a React component is using the ES6 class syntax
+
+~You can compose multiple React components and render them together by making them child components of a parent component. when react encounters the child component (component name in a self closing tag < />) it will render its markup at its current position.
+
