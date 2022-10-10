@@ -25,4 +25,6 @@ Function names must start with a capital letter in React.
 
 ~You can compose multiple React components and render them together by making them child components of a parent component. when react encounters the child component (component name in a self closing tag < />) it will render its markup at its current position.
 
+~React components are passed on to ReactDOM.render() differently from jsx elements like so:ReactDOM.render(<ComponentToRender />, targetNode)
+
 
