@@ -15,7 +15,7 @@ The function call, `ReactDOM.render(JSX, document.getElementById('root'))` place
 
 ~The naming convention for all HTML attributes and event references in JSX become camelCase; use className to define an html class in JSX
 
-~Any JSX element can be written with a self-closing tag (<div /> ;no content can be added to this div), and every element must be closed. 
+~Any JSX element can be written with a self-closing tag `<div />` ;no content can be added to this div), and every element must be closed. 
 
 ~One of two ways to create a React component is by using a JavaScript function. This creates a `stateless component` i.e. one which can receive data and render it but does not manage changes to the data. To create a component using a function, simply write a JS function that returns either JSX or null.
 Using the React component architecture, the UI of a page can be constructed from several isolated components, making the code base more maintainable.
