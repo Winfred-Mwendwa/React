@@ -37,6 +37,6 @@ Function names must start with a capital letter in React.
 
 ~Anytime you refer to a class component within itself, you use the `this` keyword. {this.props.name}
 
-~A `stateless functional component` is any function you write which accepts props and returns JSX. A `stateless component`, on the other hand, is a class that extends React.Component, but does not use internal state. Finally, a `stateful component/React component/component` is a class component that does maintain its own internal state. 
+ 
 
 
